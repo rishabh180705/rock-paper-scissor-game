@@ -60,6 +60,7 @@ console.log(userChoice);
             userScore=0;
             compScore=0;
             msg.innerHTML="play the game";
+               msg.style.backgroundColor="rgb(51 65 85)";
          });
    }
 
