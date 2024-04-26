@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-rose-100">
+    <div>
+        <main>
+
+
+            <div class="text-center mb-10 p-6 text-3xl lg:text-8xl md:text-6xl text-zinc-600">
+                <h2>Rock Paper Scissors Game</h2>
+            </div>
+
+            <!-- stone paper scissors block start -->
+            <div class="flex justify-center items-center  space-x-6 md:space-x-16 lg:gap-28 font-extrabold ">
+                <div>
+                    <div id="rock" class="component bg-orange-600 "><img src="./images/fist.png"></div>
+                </div>
+                <div>
+                    <div id="paper" class="component bg-gray-500"><img src="./images/hand-paper.png"></div>
+                </div>
+                <div>
+                    <div id="scissors" class="component bg-lime-400"><img src="./images/scissors.png"></div>
+                </div>
+            </div>
+            <!-- stone paper scissors block end -->
+            <!--display boxes -->
+            <div class="flex justify-center  items-center mt-5">
+                <div id="msgbox"
+                    class="max w-96 h-24 bg-slate-700 text-center flex justify-center items-center text-2xl text-white rounded-2xl">
+                    <p>Play the Game</p>
+                </div>
+            </div>
+
+            <!-- score box start -->
+            <div class="flex gap-10 md:gap-12 lg:gap-20 justify-center mt-10   text-3xl md:text-5xl">
+
+                <div class="flex space-x-8">
+                    <button>you:</button>
+                    <p id="user">0</p>
+                </div>
+
+                <div class="flex space-x-8">
+                    <button>computer:</button>
+                    <p id="comp">0</p>
+                </div>
+            </div>
+            <!-- score end -->
+
+            <div class="flex justify-center mt-10">
+                <button id="reset" class="text-4xl bg-zinc-700 p-5 rounded-3xl text-orange-600">Reset</button>
+            </div>
+
+
+        </main>
+    </div>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>

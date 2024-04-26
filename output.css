@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .component{
+        @apply rounded-full md:h-36 md:w-36 p-4 hover:bg-opacity-40 w-28 h-28  lg:w-48 lg:h-48 
+    }
+}
