@@ -8,6 +8,7 @@ let msg=document.querySelector("#msgbox");
 
 const draw=()=>{
     msg.innerHTML=`Game draw`;
+    msg.style.backgroundColor="rgb(51 65 85)";
 }
 const compGenChoice=()=>{
     const options=["rock","scissors","paper"]
@@ -18,9 +19,11 @@ const compGenChoice=()=>{
 const displaymsg=(userWin,userChoice,compChoice)=>{
       if(userWin){
         msg.innerHTML=`you win! ${userChoice} beats ${compChoice}`;
+            msg.style.backgroundColor="green";
       }
       else{
         msg.innerHTML=`you lose ${compChoice} beats ${userChoice}`;
+            msg.style.backgroundColor="red";
       }
 }
  const playGame=(userChoice)=>{
